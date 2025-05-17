@@ -2267,7 +2267,12 @@ namespace Atividade_UC_12 {
                     this[this.tableCliente.Id_clienteColumn] = value;
                 }
             }
-            
+
+            public override string ToString()
+            {
+                return this.Nome;
+            }
+
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string Nome {
@@ -2403,7 +2408,12 @@ namespace Atividade_UC_12 {
                     this[this.tableFornecedor.Id_fornecedorColumn] = value;
                 }
             }
-            
+
+            public override string ToString()
+            {
+                return this.Nome;
+            }
+
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string Nome {
@@ -2517,9 +2527,17 @@ namespace Atividade_UC_12 {
                     base(rb) {
                 this.tableItensPedido = ((ItensPedidoDataTable)(this.Table));
             }
-            
+
+         
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+
+
+            public override string ToString()
+            {
+                return this.Id_item_pedido.ToString();
+            }
+
             public int Id_item_pedido {
                 get {
                     return ((int)(this[this.tableItensPedido.Id_item_pedidoColumn]));
@@ -2654,9 +2672,15 @@ namespace Atividade_UC_12 {
                     base(rb) {
                 this.tablePedido = ((PedidoDataTable)(this.Table));
             }
-            
+
+            public override string ToString()
+            {
+                return this.Id_pedido.ToString();
+            }
+
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+
             public int Id_pedido {
                 get {
                     return ((int)(this[this.tablePedido.Id_pedidoColumn]));
@@ -2780,7 +2804,12 @@ namespace Atividade_UC_12 {
                     this[this.tableProdutos.Id_produtoColumn] = value;
                 }
             }
-            
+
+            public override string ToString()
+            {
+                return this.Nome;
+            }
+
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string Nome {

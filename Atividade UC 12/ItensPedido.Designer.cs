@@ -32,8 +32,6 @@
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnAtualizar = new System.Windows.Forms.Button();
             this.btnAdicionar = new System.Windows.Forms.Button();
-            this.txtDescricao = new System.Windows.Forms.TextBox();
-            this.lblDescricao = new System.Windows.Forms.Label();
             this.txtQuantidade = new System.Windows.Forms.TextBox();
             this.lblQuantidade = new System.Windows.Forms.Label();
             this.txtPreco = new System.Windows.Forms.TextBox();
@@ -86,24 +84,6 @@
             this.btnAdicionar.Text = "Adicionar";
             this.btnAdicionar.UseVisualStyleBackColor = true;
             this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
-            // 
-            // txtDescricao
-            // 
-            this.txtDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescricao.Location = new System.Drawing.Point(12, 162);
-            this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(305, 26);
-            this.txtDescricao.TabIndex = 94;
-            // 
-            // lblDescricao
-            // 
-            this.lblDescricao.AutoSize = true;
-            this.lblDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescricao.Location = new System.Drawing.Point(9, 132);
-            this.lblDescricao.Name = "lblDescricao";
-            this.lblDescricao.Size = new System.Drawing.Size(80, 20);
-            this.lblDescricao.TabIndex = 93;
-            this.lblDescricao.Text = "Descrição";
             // 
             // txtQuantidade
             // 
@@ -216,8 +196,6 @@
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.btnAdicionar);
-            this.Controls.Add(this.txtDescricao);
-            this.Controls.Add(this.lblDescricao);
             this.Controls.Add(this.txtQuantidade);
             this.Controls.Add(this.lblQuantidade);
             this.Controls.Add(this.txtPreco);
@@ -229,7 +207,7 @@
             this.Controls.Add(this.lblIDProduto);
             this.Controls.Add(this.lblID);
             this.Controls.Add(this.lboDadosItensPedido);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ItensPedido";
             this.Text = "ItensPedido";
             this.ResumeLayout(false);
@@ -243,8 +221,6 @@
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnAtualizar;
         private System.Windows.Forms.Button btnAdicionar;
-        private System.Windows.Forms.TextBox txtDescricao;
-        private System.Windows.Forms.Label lblDescricao;
         private System.Windows.Forms.TextBox txtQuantidade;
         private System.Windows.Forms.Label lblQuantidade;
         private System.Windows.Forms.TextBox txtPreco;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Atividade_UC_12.DubrasaSkateDataSetTableAdapters;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,8 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Atividade_UC_12.DubraSkateShopDataSetTableAdapters;
-using static Atividade_UC_12.DubraSkateShopDataSet;
+using static Atividade_UC_12.DubrasaSkateDataSet;
+
 
 namespace Atividade_UC_12
 {

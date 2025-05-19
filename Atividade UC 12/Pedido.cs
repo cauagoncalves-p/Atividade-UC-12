@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Atividade_UC_12.DubrasaSkateDataSetTableAdapters;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,8 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Atividade_UC_12.DubraSkateShopDataSetTableAdapters;
-using static Atividade_UC_12.DubraSkateShopDataSet;
+using static Atividade_UC_12.DubrasaSkateDataSet;
+
 
 namespace Atividade_UC_12
 {
@@ -46,8 +47,8 @@ namespace Atividade_UC_12
             PedidoRow pedido = lboDadosPedidos.SelectedItem as PedidoRow;
             txtID.Text = pedido.Id_cliente.ToString();
             txtIDCliente.Text = pedido.Id_cliente.ToString();
-            txtDataPedido.Text = pedido.Data_pedido.ToString();
-            txtStatus.Text = pedido.status_pedido;
+            txtDataPedido.Text = pedido.DataPedido.ToString();
+            txtStatus.Text = pedido.StatusPedido;
         }
 
         private void btnAdicionar_Click(object sender, EventArgs e)
@@ -82,7 +83,7 @@ namespace Atividade_UC_12
 
             try
             {
-                pedido.Delete(excluirPedido.Id_pedido, excluirPedido.Id_cliente, excluirPedido.Data_pedido);
+                pedido.Delete(excluirPedido.Id_pedido, excluirPedido.Id_cliente, excluirPedido.DataPedido,excluirPedido.StatusPedido);
                 atualizarBanco();
                 limparcampos();
             }
@@ -107,7 +108,7 @@ namespace Atividade_UC_12
             int id_cliente = int.Parse(txtIDCliente.Text);
             DateTime data_pedido = Convert.ToDateTime(txtDataPedido.Text);
             // Atualizando os dados 
-            dadosAtualizar.Data_pedido = data_pedido;
+            dadosAtualizar.DataPedido = data_pedido;
             dadosAtualizar.Id_cliente = id_cliente;
             atualizar.Update(dadosAtualizar);
 

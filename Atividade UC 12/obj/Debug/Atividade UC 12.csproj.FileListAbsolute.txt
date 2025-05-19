@@ -13,3 +13,18 @@ C:\Users\cauag\source\repos\Atividade UC 12\Atividade UC 12\obj\Debug\Atividade 
 C:\Users\cauag\source\repos\Atividade UC 12\Atividade UC 12\obj\Debug\Atividade UC 12.csproj.CoreCompileInputs.cache
 C:\Users\cauag\source\repos\Atividade UC 12\Atividade UC 12\obj\Debug\Atividade UC 12.exe
 C:\Users\cauag\source\repos\Atividade UC 12\Atividade UC 12\obj\Debug\Atividade UC 12.pdb
+C:\Users\Caua.gpereira2\Source\Repos\Atividade-UC-12\Atividade UC 12\obj\Debug\Atividade UC 12.csproj.AssemblyReference.cache
+C:\Users\Caua.gpereira2\Source\Repos\Atividade-UC-12\Atividade UC 12\obj\Debug\Atividade_UC_12.Clientes.resources
+C:\Users\Caua.gpereira2\Source\Repos\Atividade-UC-12\Atividade UC 12\obj\Debug\Atividade_UC_12.Form1.resources
+C:\Users\Caua.gpereira2\Source\Repos\Atividade-UC-12\Atividade UC 12\obj\Debug\Atividade_UC_12.Fornecedor.resources
+C:\Users\Caua.gpereira2\Source\Repos\Atividade-UC-12\Atividade UC 12\obj\Debug\Atividade_UC_12.ItensPedido.resources
+C:\Users\Caua.gpereira2\Source\Repos\Atividade-UC-12\Atividade UC 12\obj\Debug\Atividade_UC_12.Pedido.resources
+C:\Users\Caua.gpereira2\Source\Repos\Atividade-UC-12\Atividade UC 12\obj\Debug\Atividade_UC_12.Produto.resources
+C:\Users\Caua.gpereira2\Source\Repos\Atividade-UC-12\Atividade UC 12\obj\Debug\Atividade_UC_12.Properties.Resources.resources
+C:\Users\Caua.gpereira2\Source\Repos\Atividade-UC-12\Atividade UC 12\obj\Debug\Atividade UC 12.csproj.GenerateResource.cache
+C:\Users\Caua.gpereira2\Source\Repos\Atividade-UC-12\Atividade UC 12\obj\Debug\Atividade UC 12.csproj.CoreCompileInputs.cache
+C:\Users\Caua.gpereira2\Source\Repos\Atividade-UC-12\Atividade UC 12\obj\Debug\Atividade UC 12.exe
+C:\Users\Caua.gpereira2\Source\Repos\Atividade-UC-12\Atividade UC 12\obj\Debug\Atividade UC 12.pdb
+C:\Users\Caua.gpereira2\Source\Repos\Atividade-UC-12\Atividade UC 12\bin\Debug\Atividade UC 12.exe.config
+C:\Users\Caua.gpereira2\Source\Repos\Atividade-UC-12\Atividade UC 12\bin\Debug\Atividade UC 12.exe
+C:\Users\Caua.gpereira2\Source\Repos\Atividade-UC-12\Atividade UC 12\bin\Debug\Atividade UC 12.pdb

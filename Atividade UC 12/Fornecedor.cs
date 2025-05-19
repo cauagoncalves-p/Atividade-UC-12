@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Atividade_UC_12.DubraSkateShopDataSetTableAdapters;
-using static Atividade_UC_12.DubraSkateShopDataSet;
+using Atividade_UC_12.DubrasaSkateDataSetTableAdapters;
+using static Atividade_UC_12.DubrasaSkateDataSet;
+
 
 namespace Atividade_UC_12
 {

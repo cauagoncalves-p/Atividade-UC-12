@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Atividade_UC_12.DubrasaSkateDataSetTableAdapters;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,8 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Atividade_UC_12.DubraSkateShopDataSetTableAdapters;
-using static Atividade_UC_12.DubraSkateShopDataSet;
+using static Atividade_UC_12.DubrasaSkateDataSet;
+
 
 namespace Atividade_UC_12
 {
@@ -29,7 +30,6 @@ namespace Atividade_UC_12
         private void limparcampos()
         {
             txtID.Clear();
-            txtDescricao.Clear();
             txtIDProduto.Clear();
             txtPreco.Clear();
             txtQuantidade.Clear();
@@ -44,7 +44,7 @@ namespace Atividade_UC_12
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtID.Text) && string.IsNullOrEmpty(txtDescricao.Text)
+            if (string.IsNullOrEmpty(txtID.Text)
               && string.IsNullOrEmpty(txtIdPedido.Text) && string.IsNullOrEmpty(txtQuantidade.Text) && string.IsNullOrEmpty(txtPreco.Text)
               && string.IsNullOrEmpty(txtIDProduto.Text))
             {
@@ -56,9 +56,8 @@ namespace Atividade_UC_12
             int quantidade = Convert.ToInt32(txtQuantidade.Text);
             int idProduto = Convert.ToInt32(txtIDProduto.Text);
             int idPedido = Convert.ToInt32(txtIdPedido.Text);
-            string descricao = txtDescricao.Text;
             decimal preco = Convert.ToDecimal(txtPreco.Text);
-            itensPedido.Insert(idProduto, idPedido, preco, quantidade, descricao);
+            itensPedido.Insert(idProduto, idPedido, preco, quantidade);
             atualizarBanco();
             limparcampos();
         }
@@ -75,7 +74,7 @@ namespace Atividade_UC_12
             ItensPedidoTableAdapter itensPedido = new ItensPedidoTableAdapter();
 
 
-            itensPedido.Delete(excluiritemPedido.Id_item_pedido, excluiritemPedido.Id_produto, excluiritemPedido.Id_pedido, excluiritemPedido.Preco, excluiritemPedido.Quantidade);
+            itensPedido.Delete(excluiritemPedido.Id_itensPedido, excluiritemPedido.Id_produto, excluiritemPedido.Id_pedido, excluiritemPedido.Preco, excluiritemPedido.Quantidade);
             atualizarBanco();
             limparcampos();
         }
@@ -95,13 +94,11 @@ namespace Atividade_UC_12
             int quantidade = Convert.ToInt32(txtQuantidade.Text);
             int idProduto = Convert.ToInt32(txtIDProduto.Text);
             int idPedido = Convert.ToInt32(txtIdPedido.Text);
-            string descricao = txtDescricao.Text;
             decimal preco = Convert.ToDecimal(txtPreco.Text);
             // Atualizando os dados 
             dadosAtualizar.Id_pedido = idPedido;
             dadosAtualizar.Quantidade = quantidade;
             dadosAtualizar.Id_produto = idProduto;
-            dadosAtualizar.Descrição = descricao;
             dadosAtualizar.Preco = preco;
             atualizar.Update(dadosAtualizar);
             atualizarBanco();
@@ -112,7 +109,7 @@ namespace Atividade_UC_12
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtID.Text) && string.IsNullOrEmpty(txtDescricao.Text)
+            if (string.IsNullOrEmpty(txtID.Text)
               && string.IsNullOrEmpty(txtIdPedido.Text) && string.IsNullOrEmpty(txtQuantidade.Text) && string.IsNullOrEmpty(txtPreco.Text)
               && string.IsNullOrEmpty(txtIDProduto.Text))
             {
@@ -128,11 +125,10 @@ namespace Atividade_UC_12
         {
             if (lboDadosItensPedido.SelectedItem == null) return;
             ItensPedidoRow itensPedido = lboDadosItensPedido.SelectedItem as ItensPedidoRow;
-            txtID.Text = itensPedido.Id_item_pedido.ToString();
+            txtID.Text = itensPedido.Id_itensPedido.ToString();
             txtIdPedido.Text = itensPedido.Id_pedido.ToString();
             txtIDProduto.Text = itensPedido.Id_produto.ToString();
             txtPreco.Text = itensPedido.Preco.ToString();
-            txtDescricao.Text = itensPedido.Descrição;
             txtQuantidade.Text = itensPedido.Quantidade.ToString();
         }
     }
